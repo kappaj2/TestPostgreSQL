@@ -1,0 +1,33 @@
+Installed yarn with the msi installer.
+Then generated the application with JHipster version 4.0.6 with the following options:
+
+1.	Use PostgreSQL as Development and prod database.
+2.	Use monolithic app
+3.	Use ehcache
+4.	Use Maven for building.
+5.	Added Elasticsearch
+6.	UI is Angular 2 - BETA Release
+7.	Add LibSASS
+8. 	Added Gatling, Cucumber and Protractor support for testing.
+
+A.	Build the Spring-boot application
+1.	Configure the PostgreSQL database - create the new database name => TestPostgreSQL  ( with pgAdmin or cli )
+2.	Configure the username/password settings in the application-dev.yml and application-prod.yml files.
+3.	Run maven to get the base build -  leave the profile as default, so should be development.
+	$ mvnw clean install
+	
+B.	Start Webpack
+1.	Start another terminal and start yarn for Webpack
+	$ yarn start
+	
+C.	Now start the Spring application to serve both the backend and front-end
+	$ mvnw
+	
+D.	Now use the JDL studio to generate the new entities.
+1.	Download .jh file
+2.	Run JHipster import of the new entities file
+	$ yo jhipster:import-jdl jhipster-jdl.jh
+	This will now generate all the entities, dto's, services, etc. It will then generate the front-end side by calling :
+	$ webpack --config webpack/webpack.dev.js (this is done as part of the yo JHipster command - no need to run this manually)
+	
+ 

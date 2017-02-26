@@ -20,5 +20,29 @@
 
     <cache alias="za.co.ajk.domain.User.persistentTokens" uses-template="simple"/>
 
+    <cache alias="za.co.ajk.domain.Country" uses-template="simple"/>
+
+    <cache alias="za.co.ajk.domain.Department" uses-template="simple"/>
+
+    <cache alias="za.co.ajk.domain.Department.employees" uses-template="simple"/>
+
+    <cache alias="za.co.ajk.domain.Employee" uses-template="simple"/>
+
+    <cache alias="za.co.ajk.domain.Employee.jobs" uses-template="simple"/>
+
+    <cache alias="za.co.ajk.domain.Job" uses-template="simple"/>
+
+    <cache alias="za.co.ajk.domain.Job.tasks" uses-template="simple"/>
+
+    <cache alias="za.co.ajk.domain.JobHistory" uses-template="simple"/>
+
+    <cache alias="za.co.ajk.domain.Location" uses-template="simple"/>
+
+    <cache alias="za.co.ajk.domain.Region" uses-template="simple"/>
+
+    <cache alias="za.co.ajk.domain.Task" uses-template="simple"/>
+
+    <cache alias="za.co.ajk.domain.Task.jobs" uses-template="simple"/>
+
     <!-- jhipster-needle-ehcache-add-entry -->
 </config>

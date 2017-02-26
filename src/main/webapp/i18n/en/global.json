@@ -7,6 +7,14 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entities",
+                "countryMySuffix": "Country",
+                "departmentMySuffix": "Department",
+                "employeeMySuffix": "Employee",
+                "jobMySuffix": "Job",
+                "jobHistoryMySuffix": "Job History",
+                "locationMySuffix": "Location",
+                "regionMySuffix": "Region",
+                "taskMySuffix": "Task",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
