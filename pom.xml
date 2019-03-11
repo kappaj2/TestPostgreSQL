@@ -19,23 +19,6 @@
         <maven>${maven.version}</maven>
     </prerequisites>
 
-    <distributionManagement>
-
-        <repository>
-            <id>tools.kinektek.co.za</id>
-            <name>Kinektek Repository for RELEASE builds</name>
-            <url>http://kink-user:qaz1wsx2edc3@ktknexus.app-engine.xyz:8081/repository/maven-releases</url>
-            <layout>default</layout>
-        </repository>
-        <snapshotRepository>
-            <id>tools.kinektek.co.za</id>
-            <name>Kinektek Repository for SNAPSHOT builds</name>
-            <url>http://kink-user:qaz1wsx2edc3@ktknexus.app-engine.xyz:8081/repository/maven-snapshots</url>
-            <layout>default</layout>
-        </snapshotRepository>
-
-    </distributionManagement>
-
     <properties>
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx256m</argLine>
         <assertj.version>3.6.2</assertj.version>
